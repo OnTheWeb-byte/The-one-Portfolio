@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            background-color: black;
+        }
+
+        header {
+            background-color: lightblue;
+            color: black;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            
+        }
+        header h1:hover{
+            transform: translateY(-5px);
+        }
+        .contact:hover{
+            transform: translateY(-5px);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: lightblue;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: lightblue;
+        }
+        .about:hover{
+            transform: translateY(-5px);
+        }
+
+        .about {
+            text-align: center;
+        }
+
+        .about p{
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: lightblue;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            color: lightblue;
+        }
+
+        .project {
+            background-color: black;
+            border: 1px solid lightblue;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .project .content {
+            padding: 1rem;
+            
+        }
+
+        .project h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .project p {
+            margin: 0.5rem 0 0;
+            color: lightblue;
+            line-height: 1.4;
+        }
+
+        .contact {
+            text-align: center;
+            
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            
+        }
+
+        .contact form input, 
+        .contact form textarea, 
+        .contact form button {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            
+        }
+
+        .contact form button {
+            background-color: lightblue;
+            color: #fff;
+            border: none;
+            
+            font-size: 1rem;
+            font-weight: bold;
+        }
+
+        .contact form button:hover {
+            background-color: lightblue;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: lightblue;
+            color: #fff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+        body {
+            cursor: none;
+        }
+        #glitter-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: radial-gradient(circle, rgb(0, 208, 255) 0%, rgba(255, 215, 0, 0) 70%);
+            pointer-events: none;
+            z-index: 9999;
+            border-radius: 100%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgba(0, 213, 255, 0.8);
+            animation: sparkle 1.5s infinite;
+        }
+        @keyframes sparkle {
+            0%, 100% {
+                transform: scale(1) translate(-50%, -50%);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(1.5) translate(-50%, -50%);
+                opacity: 0.5;
+            }
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="glitter-cursor"></div>
+
+<header>
+    <h1>Abdulaziz Islam</h1>
+    <p>Web Developer | Software Engineer | Web Design</p>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi there! My name is Abdulaziz Islam, and I’m a passionate and driven software engineering student at Centennial College. I have a strong interest in designing and developing innovative software solutions that solve real-world problems.
+
+            My journey at Centennial College has equipped me with hands-on experience in programming languages like C#, Python, Java, SQL, Html and Css, as well as foundational skills in software design, system analysis, and project management.
+            
+            I’m particularly interested in web development, artificial intelligence, mobile app development, and I enjoy exploring how technology can shape the future of Software Engineering. Beyond coding, I value teamwork, continuous learning, and creative problem-solving.
+            
+            
+            Feel free to reach out if you’d like to collaborate or just chat about all things tech!
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        
+        <div class="project">
+            <a href="file:///C:/Users/Aziz/Documents/web%20development%20group%20project[1]/web%20development%20group%20project/index.html" target="_blank">
+                <img src="images/IMG_2184.jpeg" alt="Project 1">
+        </a>
+            <div class="content">
+                <h4>Project 1</h4>
+                <p>CineFlix Hub, is a movie website designed to provide a smooth and engaging experience for movie enthusiasts. Users can watch trailers, explore movie details, and enjoy a visually appealing interface. The goal was to make the website interactive, accessible, and easy to navigate.</p>
+            </div>
+        </div>
+        <div class="project">
+            <a href="file:///C:/Users/Aziz/Downloads/Portfolio/Assignment%204.html#" target="_blank">
+                <img src="images/IMG_2186.jpeg" alt="Project 2">
+            </a>
+            <div class="content">
+                <h4>Project 2</h4>
+                <p>The "Rate Me Servey" is a course evaluation website that is an intuitive and user-friendly platform designed to facilitate feedback from students on their educational experiences. This platform allows students to rate and review courses based on various criteria such as teaching quality, course content, learning resources, and overall satisfaction.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="project3.jpg" alt="Project 3">
+            <div class="content">
+                <h4>Project 3</h4>
+                <p>A brief description of the project and its purpose or features.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+</footer>
+<script>
+    // Glitter Cursor Effect
+    const glitterCursor = document.getElementById("glitter-cursor");
+    document.addEventListener("mousemove", (e) => {
+        glitterCursor.style.left = `${e.clientX}px`;
+        glitterCursor.style.top = `${e.clientY}px`;
+    });
+
+    // Movie Trailer Functionality
+    const movieCards = document.querySelectorAll(".movie-card");
+    const trailerSection = document.getElementById("trailer-section");
+    const trailer = document.getElementById("trailer");
+    const closeTrailerButton = document.getElementById("close-trailer");
+
+    movieCards.forEach((card) => {
+        card.addEventListener("click", () => {
+            const trailerURL = card.dataset.trailer;
+            trailer.src = trailerURL;
+            trailerSection.style.display = "flex";
+        });
+    });
+
+    closeTrailerButton.addEventListener("click", () => {
+        trailerSection.style.display = "none";
+        trailer.src = ""; // Stop the video
+    });
+</script>
+
+</body>
+</html>
+
